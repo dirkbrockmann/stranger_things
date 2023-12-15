@@ -1,4 +1,4 @@
-// this is just a collection of utility functions that are frequently used in some explorables
+	// this is just a collection of utility functions that are frequently used in some explorables
 
 import * as d3 from "d3"
 import {map, replace, capitalize, each, has, isBoolean, pickBy, toPairs } from "lodash-es"

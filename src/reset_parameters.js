@@ -4,15 +4,17 @@
 // invokes this function
 // Sometimes this needs to be adapted to the needs 
 
-import parameters from "./parameters.js"
+import attractors from "./attractors.js"
 import * as ct from "./controls.js"
 import {each} from "lodash-es"
+import {radio} from "./controls.js"
 
 export default (controls) => {
-	each(ct.variables, x => x.widget.reset(controls,x.default) );
-	each(ct.booleans, x => x.widget.reset(controls,x.default) );
-	each(ct.choices, x => x.widget.reset(controls,x.default)  );
-	parameters.number_of_particles.widget.update();
+	
+		each(attractors[radio.value()].P,p=>{
+			p.widget.reset(controls,p.defv)
+		})
+
 }
 
 

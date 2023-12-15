@@ -1,12 +1,12 @@
 {
-  "name": "@explorables/explorable_template",
-  "title": "Explorable Template",
+  "name": "@explorables/stranger_things",
+  "title": "Stranger Things",
   "version": "1.0.1",
   "license": "CC-BY-4.0",
-  "description": "This is a template for making a complexity explorable. The template can be used to create a new complexity explorable. This template implements the Vicsek Model.",
+  "description": "Examples of attractors of two-dimensional chaotic maps",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dirkbrockmann/explorable_template.git"
+    "url": "git+https://github.com/dirkbrockmann/stranger_things.git"
   },
   "author": "Dirk Brockmann (https://rocs.hu-berlin.de)",
   "main": "./dist/index.js",
