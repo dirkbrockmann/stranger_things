@@ -2,7 +2,7 @@
   "name": "@explorables/stranger_things",
   "title": "Stranger Things",
   "subtitle": "Chaotic attractors of two-dimensional maps",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "CC-BY-4.0",
   "description": "This explorable illustrates the beauty of strange attractors of selected two-dimensional chaotic maps. The attractors change shape as a function of their parameters.",
   "repository": {
