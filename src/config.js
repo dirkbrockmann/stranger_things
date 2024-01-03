@@ -5,16 +5,16 @@
 
 export default { 
 	widgets:{
-		fontsize:20,
+		//fontsize:20,
 		slider_size: 400,
 		slider_show: true,
 		slider_gap : 1.5,
 		slider_girth: 12,
 		slider_knob: 14,
 		slider_anchor: {x:1,y:7},
-		resetbutton_anchor:{x:9.5,y:3},
+		resetbutton_anchor:{x:2,y:3},
 		resetbutton_size:80,
-		radio_anchor:{x:1,y:1},
+		radio_anchor:{x:5,y:1},
 		radio_size:160,
 		radio_orientation:"vertical",
 		radio_label_position:"right",

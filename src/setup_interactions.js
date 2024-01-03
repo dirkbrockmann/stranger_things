@@ -12,21 +12,24 @@ import attractors from "./attractors.js"
 import resetparameters from "./reset_parameters.js"
 import {initialize,update} from "./simulation.js"
 import {each} from "lodash-es"
-
+import {styles} from "d3-widgets"
 
 export default (display,controls,config) => {
 	
 	ct.reset.update(()=>resetparameters(controls))	
 	
 	ct.radio.update(()=>{
-		controls.selectAll(".slider_anchor").filter((d,i)=>i==ct.radio.value()).transition(1000)
-		.style("opacity",1).selectAll(".slider").selectAll("*").style("pointer-events","auto")
+		
+	controls.selectAll("#attractor").filter((d,i)=>i==ct.radio.value()).transition(1000)
+		.style("opacity",1)
+		.selectAll("."+styles.slider).selectAll("*")
+		.style("pointer-events",null)
 
-		controls.selectAll(".slider_anchor").filter((d,i)=>i==ct.radio.value()).transition(1000)
-		.style("opacity",1).selectAll(".slider").select(".track-overlay").style("pointer-events","auto")
+	controls.selectAll("#attractor").filter((d,i)=>i!=ct.radio.value()).transition(1000)
+		.style("opacity",0)
+		.selectAll("."+styles.slider).selectAll("*")
+		.style("pointer-events","none")
 
-		controls.selectAll(".slider_anchor").filter((d,i)=>i!=ct.radio.value()).transition(1000)
-		.style("opacity",0).selectAll(".slider").selectAll("*").style("pointer-events","none")
 		
 		initialize(display,config)
 		

@@ -19,13 +19,9 @@ const colors = d3.scaleOrdinal();
 
 var W,H,ctx;
 
-// the initialization function, this is bundled in simulation.js with the initialization of
-// the model and effectively executed in index.js when the whole explorable is loaded
-// typically here all the elements in the SVG or CANVAS element are set.
 
 const initialize = (display,config) => {
 	
-
 	const attractor = attractors[ct.radio.value()];
 	
 	W = config.display_size.width;
@@ -58,7 +54,7 @@ const initialize = (display,config) => {
 	colors.domain([0,attractor.M-1]).range([attractor.color1,attractor.color2])
 		
 	ctx = display.node().getContext('2d');	
-	ctx.clearRect(1, 1, W-2, H-2);
+	ctx.clearRect(0, 0, W, H);
 	each(orbits,(o,i)=>{
 		const c = d3.rgb(colors(i));
 		ctx.fillStyle="rgb("+c.r+","+c.g+","+c.b+")";
@@ -73,10 +69,8 @@ const initialize = (display,config) => {
 };
 
 
-const update = (display,config) => {
-	
-	initialize(display,config)
-	
+const update = (display,config) => {	
+	initialize(display,config)	
 }
 
 
