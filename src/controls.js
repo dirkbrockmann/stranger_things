@@ -89,5 +89,5 @@ export default (controls,grid)=>{
 
 }
 
-export{systems,radio,reset}
+export{systems,radio,reset, reset as setup}
 
