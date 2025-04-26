@@ -4,7 +4,7 @@
   "subtitle": "Chaotic attractors of two-dimensional maps",
   "description": "This explorable illustrates the beauty of strange attractors of selected two-dimensional chaotic maps. The attractors change shape as a function of their parameters.",
   "author": "Dirk Brockmann (https://synosy.github.io)",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
